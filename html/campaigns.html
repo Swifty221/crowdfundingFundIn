@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campagn</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/project.css">
+</head>
+<body>
+    <div class="container">
+  <h1>Launch a New Campagn</h1>
+
+  <form id="campaignForm">
+    <label>
+      Campaign Title
+      <input type="text" name="title" placeholder="Your Campaign"required id="campaingName">
+    </label>
+
+    <label>
+      Description
+      <textarea name="description" rows="3" required id="campaingDes"></textarea>
+    </label>
+
+    <label class="inline">
+      Funding Goal (USD)
+      <input type="number" name="goal" min="1" required id="campaingGoal">
+    </label>
+
+    <label class="inline">
+      End Date
+      <input type="date" name="endDate" required id="campaingEnd">
+    </label>
+    <label>
+      Pledge Reward
+      <input type="text" name="pledge" required id="campaingPledge">
+    </label>
+
+    <label">
+      Cover Image
+      <input type="file" id="imageInput" required>
+    </label>
+    <button type="submit" id="submitButton">Create Campaign</button>
+  </form>
+</div>
+<script src="../javascript/campaigns.js"></script>
+</body>
+</html>

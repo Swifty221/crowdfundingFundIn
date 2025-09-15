@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <div class="sideBar">
+        <img src="../media/main page/logo.png" alt="logo" id="logo">
+        <h1>FundIn</h1>
+        <a href="../html/login.html" class="active">Back to login</a>
+        <a href="../html/dashboard.html" id="userDisplay">Users</a>
+        <a href="../html/campaignDash.html" id="projectDisplay">Projects</a>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h2>User Management</h2>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Total Users</h3>
+                <div class="number" id="total">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Active Users</h3>
+                <div class="number" id="active">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Inactive Users</h3>
+                <div class="number" id="inactive">0</div>
+            </div>
+        </div>
+        <div class="table-container">
+            <table class="users-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="users">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../javascript/dashboard.js"></script>
+</body>
+</html>

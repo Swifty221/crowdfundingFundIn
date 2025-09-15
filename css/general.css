@@ -1,0 +1,22 @@
+button {
+  background-color: #412a80;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px;
+}
+
+button:hover{
+  background-color: #402cf8;
+  transform: translateY(-1px);
+}
+.hidden{
+  display: none;
+}
+body {
+  font-family: Arial, sans-serif;
+}

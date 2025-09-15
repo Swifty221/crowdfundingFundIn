@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Campaign</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/project.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Campaign Details</h1>
+        
+        <form id="editCampaignForm">
+            <label>
+                Campaign Title
+                <input type="text" name="title" placeholder="Your Campaign" required id="campaignTitle">
+            </label>
+            
+            <label>
+                Description
+                <textarea name="description" rows="3" required id="campaignDescription"></textarea>
+            </label>
+            
+            <label class="inline">
+                Funding Goal (USD)
+                <input type="number" name="goal" min="1" required id="campaignGoal">
+            </label>
+            
+            <label class="inline">
+                End Date
+                <input type="date" name="endDate" required id="campaignEndDate">
+            </label>
+            
+            <label>
+                Pledge Reward
+                <input type="text" name="pledge" required id="campaignPledge">
+            </label>
+            
+            <label>
+                Cover Image
+                <input type="file" id="imageInput">
+            </label>
+            <div>
+                <button type="submit" id="updateButton">Update Campaign</button>
+                <button type="submit" id="cancelButton">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <script src="../javascript/edit-campaign.js"></script>
+</body>
+</html>
